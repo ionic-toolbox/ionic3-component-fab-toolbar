@@ -8,7 +8,7 @@ import { SplashScreen }					from '@ionic-native/splash-screen';
 
 import { MainApp }						from './app.component';
 
-import { AboutPage }					from '../pages/about/about';
+import { IonicFabsPage }				from '../pages/ionic-fabs/ionic-fabs';
 import { ContactPage }					from '../pages/contact/contact';
 import { HomePage }						from '../pages/home/home';
 import { TabsPage }						from '../pages/tabs/tabs';
@@ -18,7 +18,7 @@ import { FabToolbar }					from '../components/fab-toolbar/fab-toolbar';
 @NgModule({
 	declarations: [
 		MainApp,
-		AboutPage, ContactPage, HomePage, TabsPage,
+		IonicFabsPage, ContactPage, HomePage, TabsPage,
 		FabToolbar
 	],
 	imports: [
@@ -28,7 +28,7 @@ import { FabToolbar }					from '../components/fab-toolbar/fab-toolbar';
 	bootstrap: [IonicApp],
 	entryComponents: [
 		MainApp,
-		AboutPage, ContactPage, HomePage, TabsPage,
+		IonicFabsPage, ContactPage, HomePage, TabsPage,
 
 		FabToolbar
 	],

@@ -1,0 +1,15 @@
+<div tappable class="backdrop" (click)="onClick(false, false)"></div>
+<div class="fab-toolbar">
+	<ion-row [style.transform]="">
+		<ion-col class="{{b.icon && b.title ? 'icon-and-title' : ''}}" *ngFor="let b of buttons">
+			<button (click)="onClick($event, b)" ion-button clear [color]="b.color ? b.color : 'light'">
+				<div>
+					<ion-icon *ngIf="b.icon" [name]="b.icon"></ion-icon>
+						<br *ngIf="b.title && b.icon">
+					<label *ngIf="b.title">{{b.title}}</label>
+				</div>
+			</button>
+		</ion-col>
+	</ion-row>
+	<button (click)="onClick($event, false)" [style.transform]="active ? width: 'scale(1)' "ion-fab color="{{color}}"><ion-icon name="{{icon}}"></ion-icon></button>
+</div>
